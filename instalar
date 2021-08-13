@@ -1,0 +1,16 @@
+foi criado dois ambientes no package.json (dev, start)
+para rodar local -> yarn dev
+
+express
+mongoose
+multer
+multer-s3
+morgan
+aws-sdk
+dotenv 
+cors
+
+necessario criar bucket na aws, e criar credenciais AWS_ACCESS_KEY_ID e AWS_SECRET_ACCESS_KEY
+no bucket, precisa desmarcar as checkbox e permitir acesso publico
+
+arquivo env possuiu todas as configuracoes para os diferentes ambientes
