@@ -15,10 +15,11 @@ mongoose.connect(
 
 })
 
-app.use(cors())
 app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(cors())
 app.use(morgan('dev'))
+app.use(express.urlencoded({ extended: true }))
+
 //libera acesso a pasta local do node onde estao as fotos
 app.use(
   '/files', 

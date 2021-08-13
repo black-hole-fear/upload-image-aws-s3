@@ -25,6 +25,7 @@ PostSchema.pre('save', function(){
 })
 
 //deletar os arquivos do s3
+
 PostSchema.pre('remove', function(){
   if(process.env.STORAGE_TYPE == 's3'){
     return s3.deleteObject({
